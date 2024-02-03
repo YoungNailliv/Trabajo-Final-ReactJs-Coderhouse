@@ -1,13 +1,16 @@
-import { Navbar } from "./layouts/Navbar";
-
+import { Navbar } from "./components/layouts/Navbar";
+import { ItemListContainer } from "./components/pages/ItemListContainer.jsx";
+import "../src/App.css"
 
 function App() {
 
 
   return (
     <>
-    <Navbar/>
-    <div>Hola Mundo!</div>
+    <div className="bodyApp">
+      <Navbar/>
+      <ItemListContainer greetings= "Bienvenido a la Landing Page!" />
+    </div>
     </>
   );
 }
